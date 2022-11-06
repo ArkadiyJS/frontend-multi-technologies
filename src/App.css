@@ -11,9 +11,15 @@
 }
 
 .Header {
+  display: flex;
   grid-area: h;
+  justify-content: center;
 
-  background: gray;
+}
+
+.Header img {
+  width: 900px;
+  height: 120px;
 }
 
 .NavBar {
