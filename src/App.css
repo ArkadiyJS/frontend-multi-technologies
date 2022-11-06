@@ -1,0 +1,29 @@
+.Page {
+  display: grid;
+  width: 1200px;
+  margin: 0 auto;
+  grid-template-areas:
+    'h h'
+    'n c';
+  grid-template-rows: 120px 1fr;
+  grid-template-columns: 120px 1fr;
+
+}
+
+.Header {
+  grid-area: h;
+
+  background: gray;
+}
+
+.NavBar {
+  grid-area: n;
+
+  background: green;
+  height: 760px;
+}
+
+.Content {
+  grid-area: c;
+  background: orchid;
+}

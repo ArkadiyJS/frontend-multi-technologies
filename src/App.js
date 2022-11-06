@@ -3,8 +3,19 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      123
+    <div className="Page">
+
+      <div className='Header'>
+        шапка
+      </div>
+
+      <div className='NavBar'>
+        Навигация
+      </div>
+
+      <div className='Content'>
+        контент
+      </div>
     </div>
   );
 }
