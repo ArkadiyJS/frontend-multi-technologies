@@ -1,4 +1,4 @@
-.open-modal-btn {
+.openModalBtn {
   background: #fff;
   padding: 18px 25px;
   border-radius: 20px;
@@ -12,13 +12,13 @@
   transition: all 0.1s ease-in-out;
 }
 
-.open-modal-btn:hover {
+.openModalBtn:hover {
   box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1);
   transform: translateY(-1px);
 
 }
 
-.open-modal-btn:active {
+.openModalBtn:active {
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   transform: translateY(0);
 

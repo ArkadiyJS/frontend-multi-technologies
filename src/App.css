@@ -23,16 +23,14 @@
 }
 
 .NavBar {
-  display: grid;
+  display: flex;
   grid-area: n;
   justify-content: center;
   align-content: center;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-
-
 }
 
 .Content {
+  display: flex;
   grid-area: c;
 
 }
