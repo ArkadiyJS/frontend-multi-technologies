@@ -23,13 +23,25 @@
 }
 
 .NavBar {
+  display: grid;
   grid-area: n;
+  justify-content: center;
+  align-content: center;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
 
-  background: green;
-  height: 760px;
+
 }
 
 .Content {
   grid-area: c;
-  background: orchid;
+
+}
+
+a {
+  text-decoration: none;
+
+}
+
+a:visited {
+  color: rgb(15, 14, 14)
 }

@@ -1,20 +1,29 @@
 
+import { NavLink, Route, Routes } from 'react-router-dom';
 import './App.css';
+import Modal from './components/modal/Modal';
+import NavBar from './components/navBar/NavBar';
 
 function App() {
   return (
     <div className="Page">
 
       <div className='Header'>
-        <img src='https://sun9-west.userapi.com/sun9-1/s/v1/ig2/D-elL-GHz9_lpeq9AwLr_WPYYEA4NnWqwpn49TQL4_J_bu03zFruNkDjqY6LVRbPBMTrjuN8k9OM3c7BynN1e1GN.jpg?size=1202x193&quality=96&type=album' alt='frontEnd' />
+        <NavLink to='/'>
+          <img src='https://sun9-west.userapi.com/sun9-1/s/v1/ig2/D-elL-GHz9_lpeq9AwLr_WPYYEA4NnWqwpn49TQL4_J_bu03zFruNkDjqY6LVRbPBMTrjuN8k9OM3c7BynN1e1GN.jpg?size=1202x193&quality=96&type=album' alt='frontEnd' />
+        </NavLink>
       </div>
 
       <div className='NavBar'>
-        Навигация
+        <NavBar />
       </div>
 
+
       <div className='Content'>
-        контент
+        <Routes>
+          <Route path='/modal' element={<Modal />} />
+        </Routes>
+
       </div>
     </div>
   );
