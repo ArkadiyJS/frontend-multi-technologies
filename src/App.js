@@ -3,6 +3,7 @@ import { NavLink, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Modal from './components/modal/Modal';
 import NavBar from './components/navBar/NavBar';
+import Quiz from './components/quiz/Quiz';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       <div className='Content'>
         <Routes>
           <Route path='/modal' element={<Modal />} />
+          <Route path='/quiz' element={<Quiz />} />
         </Routes>
 
       </div>
