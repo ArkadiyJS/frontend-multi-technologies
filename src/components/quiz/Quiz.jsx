@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
+import s from './Quiz.module.css'
 
 const questions = [
   {
@@ -22,31 +23,69 @@ const questions = [
   },
 ];
 
-function Result() {
+function Result({ correct }) {
   return (
-    <div className="result">
+    <div className={s.result}>
       <img src="https://cdn-icons-png.flaticon.com/512/2278/2278992.png" alt='icon' />
-      <h2>Вы отгадали 3 ответа из 10</h2>
-      <button>Попробовать снова</button>
+      <h2>Вы отгадали {correct} ответа из {questions.length}</h2>
+
+      <a href='/quiz'>
+        <button  >Попробовать снова</button>
+      </a>
+
     </div>
   );
 }
 
-const Quiz = (props) => {
+const GameQuiz = ({ question, step, onCLickVariant }) => {
+
+  const percentСompletion = Math.round((step / questions.length) * 100)
+
+
 
   return (
     <>
-      <div className="progress">
-        <div style={{ width: '50%' }} className="progress__inner"></div>
+      <div className={s.progress}>
+        <div style={{ width: `${percentСompletion}%` }} className={s.progress__inner}></div>
       </div>
-      <h1>Что такое useState?</h1>
+      <h1 className={s.title}>{question.title}</h1>
       <ul>
-        <li>Это функция для хранения данных компонента</li>
-        <li>Это глобальный стейт</li>
-        <li>Это когда ты никому не нужен</li>
-      </ul>
+        {question.variants.map((text, i) => (<li className={s.variants} onClick={() => onCLickVariant(i)} key={text}>{text} </li>))}
 
+      </ul>
     </>
+
+  )
+
+}
+
+const Quiz = (props) => {
+
+  const [step, setStep] = useState(0)
+
+  const [correct, setCorrect] = useState(0)
+
+  const question = questions[step]
+
+  const onCLickVariant = (i) => {
+
+    setStep(step + 1)
+
+    if (i === question.correct) {
+      setCorrect(correct + 1)
+    }
+  }
+  return (
+    <div className={s.Games}>
+      {
+        step !== questions.length ?
+          <GameQuiz step={step} setStep={setStep} question={question} onCLickVariant={onCLickVariant} />
+          : <Result correct={correct} />
+      }
+
+
+
+    </div>
   );
 }
 

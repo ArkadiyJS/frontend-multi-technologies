@@ -9,21 +9,21 @@ function NavBar(props) {
 
       <hr />
 
-      <button className={s.button} >
-        <NavLink to='modal'>Modal</NavLink>
-      </button>
+
+      <NavLink to='modal'><button className={s.button} >Modal</button></NavLink>
+
 
       <hr />
 
-      <button className={s.button} >
-        <NavLink to='quiz'>Quiz</NavLink>
-      </button>
+
+      <NavLink to='quiz'><button className={s.button} >Quiz </button></NavLink>
+
 
       <hr />
 
-      <button className={s.button} >
-        <NavLink to='gallery'>Photo gallery</NavLink>
-      </button>
+
+      <NavLink to='gallery'><button className={s.button} >Photo gallery</button></NavLink>
+
       <hr />
 
     </div>
