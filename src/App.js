@@ -15,12 +15,11 @@ function App() {
         </NavLink>
       </div>
 
-      <div className='NavBar'>
-        <NavBar />
-      </div>
+      
 
 
       <div className='Content'>
+        <NavBar />
         <Routes>
           <Route path='/modal' element={<Modal />} />
           <Route path='/quiz' element={<Quiz />} />
