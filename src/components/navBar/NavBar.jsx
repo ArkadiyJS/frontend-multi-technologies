@@ -4,19 +4,31 @@ import s from './NavBar.module.css'
 
 function NavBar(props) {
   return (
-    <div >
-      <div className={s.text}>elements frontEnds</div>
+    <div  >
+      <div >elements frontEnds</div>
 
-      <hr />
+
 
 
       <NavLink to='modal'><button className={s.button} >Modal</button></NavLink>
 
 
-      <hr />
 
 
-      <NavLink to='quiz'><button className={s.button} >Quiz </button></NavLink>
+
+
+
+
+
+
+
+
+      <div>
+
+
+        <NavLink to='quiz'><button className={s.button} >Quiz </button></NavLink>
+      </div>
+
 
 
       <hr />
@@ -24,6 +36,21 @@ function NavBar(props) {
 
       <hr />
       <NavLink to='gallery'><button className={s.button} >Photo gallery</button></NavLink>
+
+
+
+
+
+
+
+
+      <NavLink to='gallery'><button className={s.button} >Photo gallery</button></NavLink>
+
+
+      <div>
+
+        <NavLink to='gallery'><button className={s.button} >Photo gallery</button></NavLink>
+      </div>
 
 
 
