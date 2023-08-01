@@ -7,52 +7,15 @@ function NavBar(props) {
     <div  >
       <div >elements frontEnds</div>
 
-
-
-
       <NavLink to='modal'><button className={s.button} >Modal</button></NavLink>
 
-
-
-
-
-
-
-
-
-
-
-
-      <div>
-
-
-        <NavLink to='quiz'><button className={s.button} >Quiz </button></NavLink>
-      </div>
-
-
+      <NavLink to='quiz'><button className={s.button} >Quiz </button></NavLink>
 
       <hr />
       <NavLink to='gameBtn'><button className={s.button} > Game btn</button></NavLink>
 
       <hr />
       <NavLink to='gallery'><button className={s.button} >Photo gallery</button></NavLink>
-
-
-
-
-
-
-
-
-      <NavLink to='gallery'><button className={s.button} >Photo gallery</button></NavLink>
-
-
-      <div>
-
-        <NavLink to='gallery'><button className={s.button} >Photo gallery</button></NavLink>
-      </div>
-
-
 
 
     </div>
