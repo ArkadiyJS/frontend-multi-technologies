@@ -20,11 +20,13 @@ function NavBar(props) {
 
 
       <hr />
-
-
-      <NavLink to='gallery'><button className={s.button} >Photo gallery</button></NavLink>
+      <NavLink to='gameBtn'><button className={s.button} > Game btn</button></NavLink>
 
       <hr />
+      <NavLink to='gallery'><button className={s.button} >Photo gallery</button></NavLink>
+
+
+
 
     </div>
   );
