@@ -4,6 +4,7 @@ import './App.css';
 import Modal from './components/modal/Modal';
 import NavBar from './components/navBar/NavBar';
 import Quiz from './components/quiz/Quiz';
+import GameBtn from './components/gameBtn/gameBtn';
 
 function App() {
   return (
@@ -15,14 +16,18 @@ function App() {
         </NavLink>
       </div>
 
-      
+
+      <div className='NavBar'>
+        <NavBar />
+      </div>
 
 
       <div className='Content'>
-        <NavBar />
+
         <Routes>
           <Route path='/modal' element={<Modal />} />
           <Route path='/quiz' element={<Quiz />} />
+          <Route path='/gameButton' element={<GameBtn />} />
         </Routes>
 
       </div>

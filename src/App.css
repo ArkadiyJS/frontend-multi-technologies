@@ -4,6 +4,7 @@
   margin: 0 auto;
   grid-template-areas:
     'h h'
+    'n n'
     'c c';
   grid-template-rows: 120px 1fr;
   grid-template-columns: 120px 1fr;
@@ -24,16 +25,17 @@
 }
 
 .NavBar {
-  display: flex;
+  /* display: flex; */
   grid-area: n;
-  justify-content: center;
-  align-content: center;
+  /* justify-content: center; */
+  /* align-content: center; */
 }
 
 .Content {
 
+  margin: auto;
   grid-template-columns: 1fr 1fr 1fr;
-  
+
   grid-area: c;
 
 }

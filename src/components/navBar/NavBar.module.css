@@ -22,7 +22,8 @@
   box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
 
 }
-.card{
+
+.card {
   width: 150px;
   height: 120px;
   background-color: aqua;
@@ -37,4 +38,11 @@
 
 .text {
   font-size: 20px;
+}
+
+.navBar {
+  display: grid;
+  column-gap: 10px;
+  row-gap: 10px;
+  grid-template-columns: repeat(10, 100px);
 }
