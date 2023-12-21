@@ -24,12 +24,7 @@
   height: 120px;
 }
 
-.NavBar {
-  /* display: flex; */
-  grid-area: n;
-  /* justify-content: center; */
-  /* align-content: center; */
-}
+
 
 .Content {
 
