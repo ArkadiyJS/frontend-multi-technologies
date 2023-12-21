@@ -51,7 +51,7 @@ function GameBtn(props) {
         onClick={() => setShowModal(true)}>
         Попробуй нажми
       </button>
-      <button onClick={() => { restartGameButton() }}>🧲 Притянуть 🧲</button>
+      <button className='button' onClick={() => { restartGameButton() }}>🧲 Притянуть 🧲</button>
 
       {showModal ? <Modal setShowModal={setShowModal} /> : ''}
 

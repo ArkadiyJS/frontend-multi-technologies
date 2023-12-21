@@ -43,3 +43,20 @@ a {
 a:visited {
   color: rgb(15, 14, 14)
 }
+
+.button {
+  display: inline-block;
+  font-family: arial, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(68, 68, 68);
+  text-decoration: none;
+  user-select: none;
+  padding: .2em 1.2em;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, .1);
+  border-radius: 2px;
+  background: rgb(245, 245, 245) linear-gradient(#f4f4f4, #f1f1f1);
+  transition: all .218s ease 0s;
+
+}
