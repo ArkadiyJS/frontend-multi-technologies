@@ -1,7 +1,7 @@
-
+import s from './cssElements.module.css'
 import React, { useState } from 'react'
 import BorderAnimation from './elements/borderAnimation/borderAnimation';
-import Electrofan from './elements/electrofan/electrofan';
+
 
 function CSSElements() {
 
@@ -24,7 +24,7 @@ function CSSElements() {
 
   return (
     <div>
-      <ul onClick={() => { setShowCssElements(!showCssElements) }}><h1>Выбери</h1>
+      <ul className={s.ulPointer} onClick={() => { setShowCssElements(!showCssElements) }}><h1>Выбери</h1>
 
         {showCssElements ? pickCssElements.map((CssElements, i) => (
           <li>
@@ -43,7 +43,7 @@ function CSSElements() {
 
       {pickElement === 'Бордер' && <BorderAnimation />}
 
-      {pickElement === 'Вентелятор' && <Electrofan />}
+
 
 
 

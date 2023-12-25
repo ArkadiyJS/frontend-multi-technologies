@@ -10,7 +10,29 @@
   grid-template-columns: 120px 1fr;
   grid-gap: 3px;
 
+  @media (max-width: 1400px) {
+      width: calc(100vw - 100px);
+  
+    }
+  
+    @media (max-width: 1050px) {
+      width: calc(100vw - 100px);
+  
+    }
+  
+    @media (max-width: 730px) {
+      width: calc(100vw - 100px);
+  
+    }
+  
+    @media (max-width: 645px) {
+      width: calc(100vw - 30px);
+      margin-top: 15px;
+    }
+
 }
+
+
 
 .Header {
   display: flex;
@@ -29,7 +51,7 @@
 .Content {
 
   margin: auto;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
 
   grid-area: c;
 
@@ -58,6 +80,5 @@ a:visited {
   border-radius: 2px;
   background: rgb(245, 245, 245) linear-gradient(#f4f4f4, #f1f1f1);
   transition: all .218s ease 0s;
-  cursor: pointer;
 
 }
