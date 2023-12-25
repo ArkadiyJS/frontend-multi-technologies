@@ -1,19 +1,16 @@
-import s from './cssElements.module.css'
-import React from 'react'
 
- function CSSElements() {
+import React from 'react'
+import BorderAnimation from './elements/borderAnimation';
+
+function CSSElements() {
   return (
     <div>
-
-    <div className={s.border}>
-        <span className={s.borderSpan}>122sasdqwmfkqskfjgqaihsgfiQWGFPQUWIHPOFJASFPLJA
-        <div>s<div></div><dir></dir>asda</div></span>
-
-    </div>
+      <BorderAnimation />
 
 
 
-    <div className={s.test}> hello world</div>
+
+
 
     </div>
   )

@@ -14,7 +14,7 @@
   position: absolute;
   inset: 5px;
   z-index: 2;
-  border-radius: 16px;
+  border-radius: 20px;
   background-color: #161620;
 }
 
@@ -53,6 +53,8 @@
 }
 
 .border img {
+  border-radius: 20px;
+  padding: 5px;
   width: 290px;
   height: 390px;
 }
