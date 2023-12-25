@@ -1,6 +1,7 @@
 
 import React, { useState } from 'react'
 import BorderAnimation from './elements/borderAnimation/borderAnimation';
+import Electrofan from './elements/electrofan/electrofan';
 
 function CSSElements() {
 
@@ -40,7 +41,9 @@ function CSSElements() {
 
       {/* рендер выбраного елемента в списке */}
 
-      {pickElement == 'Бордер' && <BorderAnimation />}
+      {pickElement === 'Бордер' && <BorderAnimation />}
+
+      {pickElement === 'Вентелятор' && <Electrofan />}
 
 
 

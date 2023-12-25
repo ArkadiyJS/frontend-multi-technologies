@@ -1,11 +1,11 @@
 import React from 'react';
 
-function electrofan(props) {
+function Electrofan(props) {
   return (
     <div>
-
+      qweq
     </div>
   );
 }
 
-export default electrofan;
+export default Electrofan;
