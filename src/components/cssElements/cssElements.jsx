@@ -15,7 +15,7 @@ function CSSElements() {
 
   const [showCssElements, setShowCssElements] = useState(false)
 
-  const [pickElement, setPickElement] = useState('')
+  const [pickElement, setPickElement] = useState('Подсветка лого.')
 
 
 
@@ -24,8 +24,10 @@ function CSSElements() {
 
 
   return (
-    <div>
-      <ul className={s.ulPointer} onClick={() => { setShowCssElements(!showCssElements) }}><h1>Выбери</h1>
+    <>
+      <ul className={s.ulPointer} onClick={() => { setShowCssElements(!showCssElements) }}>
+
+        <h1 className={s.pick}>Выбери</h1>
 
         {showCssElements ? pickCssElements.map((CssElements, i) => (
           <li>
@@ -38,7 +40,7 @@ function CSSElements() {
 
       </ul>
 
-      <h1>{pickElement}</h1>
+      <h1 className={s.pickName}>{pickElement}</h1>
 
       {/* рендер выбраного елемента в списке */}
 
@@ -51,7 +53,7 @@ function CSSElements() {
 
 
 
-    </div>
+    </>
   )
 }
 

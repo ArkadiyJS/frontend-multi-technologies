@@ -9,7 +9,7 @@
     'c c';
   grid-template-rows: 120px 1fr;
   grid-template-columns: 120px 1fr;
-  grid-gap: 3px;
+  grid-gap: 5px;
 
 }
 
@@ -36,6 +36,13 @@
 
 }
 
+h1 {
+  margin: 0 auto;
+  width: 402px;
+  text-align: center;
+  filter: drop-shadow(3px 3px 10px rgb(215, 95, 25))
+}
+
 a {
   text-decoration: none;
 
@@ -50,6 +57,7 @@ a:visited {
   font-family: arial, sans-serif;
   font-size: 18px;
   font-weight: bold;
+
   color: rgb(68, 68, 68);
   text-decoration: none;
   user-select: none;

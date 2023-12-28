@@ -1,3 +1,27 @@
 .ulPointer {
   cursor: pointer;
+
+  padding: 0px 0px 0px 0px;
+}
+
+.pick {
+  border: 1px solid;
+  text-align: center;
+  border-radius: 10px;
+  padding: 5px;
+
+}
+
+.pickName {
+  border: 1px solid;
+  text-align: center;
+  border-radius: 10px;
+  padding: 5px;
+
+
+}
+
+li {
+  padding-top: 3px;
+  list-style-type: none;
 }
