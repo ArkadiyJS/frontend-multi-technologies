@@ -1,6 +1,7 @@
 import s from './cssElements.module.css'
 import React, { useState } from 'react'
 import BorderAnimation from './elements/borderAnimation/borderAnimation';
+import ShadowTheBacklight from './elements/shadowTheBacklight/shadowTheBacklight';
 
 
 function CSSElements() {
@@ -9,7 +10,7 @@ function CSSElements() {
 
 
 
-  const pickCssElements = ['Бордер', 'Вентелятор',]
+  const pickCssElements = ['Бордер', 'Подсветка лого.',]
 
 
   const [showCssElements, setShowCssElements] = useState(false)
@@ -42,7 +43,7 @@ function CSSElements() {
       {/* рендер выбраного елемента в списке */}
 
       {pickElement === 'Бордер' && <BorderAnimation />}
-
+      {pickElement === 'Подсветка лого.' && <ShadowTheBacklight />}
 
 
 
