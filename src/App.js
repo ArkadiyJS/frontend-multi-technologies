@@ -6,6 +6,7 @@ import NavBar from './components/navBar/NavBar';
 import Quiz from './components/quiz/Quiz';
 import GameBtn from './components/gameBtn/gameBtn';
 import CSSElements from './components/cssElements/cssElements';
+import ReadTheText from './components/readTheText/readTheText';
 
 function App() {
   return (
@@ -29,10 +30,10 @@ function App() {
           <Route path='/modal' element={<Modal />} />
           <Route path='/quiz' element={<Quiz />} />
           <Route path='/gameButton' element={<GameBtn />} />
-          <Route path='/CSSElements' element={<CSSElements/>} />
-          
-          
-        
+          <Route path='/CSSElements' element={<CSSElements />} />
+          <Route path='/readTheText' element={<ReadTheText />} />
+
+
         </Routes>
 
       </div>

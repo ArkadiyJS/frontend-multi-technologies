@@ -13,7 +13,7 @@ function NavBar(props) {
 
       <NavLink to='gameButton'><button className={s.button} > Game btn</button></NavLink>
       <NavLink to='CSSElements'><button className={s.button} > css element</button></NavLink>
-
+      <NavLink to='readTheText'><button className={s.button} > read text</button></NavLink>
 
     </div>
   );
