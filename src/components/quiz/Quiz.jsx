@@ -1,5 +1,8 @@
-import React, { useState } from 'react';
 import s from './Quiz.module.css'
+
+
+import React, { useState } from 'react';
+
 
 const questions = [
   {

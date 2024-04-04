@@ -1,5 +1,7 @@
-import React, { useState } from 'react';
 import s from './Modal.module.css';
+
+import React, { useState } from 'react';
+
 
 const Modal = (props) => {
 

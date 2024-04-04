@@ -1,6 +1,9 @@
 import './App.css';
 
 import { NavLink, Route, Routes } from 'react-router-dom';
+
+
+
 import Modal from './components/modal/Modal';
 import NavBar from './components/navBar/NavBar';
 import Quiz from './components/quiz/Quiz';

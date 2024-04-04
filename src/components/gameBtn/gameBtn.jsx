@@ -1,5 +1,7 @@
-import React, { useState } from 'react';
 import s from './gameBtn.module.css'
+
+import React, { useState } from 'react';
+
 import Modal from './modal';
 
 function GameBtn(props) {
