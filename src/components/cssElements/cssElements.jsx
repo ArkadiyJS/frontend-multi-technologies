@@ -6,6 +6,7 @@ import React, { useState } from 'react'
 
 import BorderAnimation from './elements/borderAnimation/borderAnimation';
 import ShadowTheBacklight from './elements/shadowTheBacklight/shadowTheBacklight';
+import Carousel from './elements/carousel/carousel';
 
 
 function CSSElements() {
@@ -14,12 +15,12 @@ function CSSElements() {
 
 
 
-  const pickCssElements = ['Бордер', 'Подсветка лого.',]
+  const pickCssElements = ['Бордер', 'Подсветка лого.', 'carousel',]
 
 
   const [showCssElements, setShowCssElements] = useState(false)
 
-  const [pickElement, setPickElement] = useState('Подсветка лого.')
+  const [pickElement, setPickElement] = useState('')
 
 
 
@@ -50,6 +51,8 @@ function CSSElements() {
 
       {pickElement === 'Бордер' && <BorderAnimation />}
       {pickElement === 'Подсветка лого.' && <ShadowTheBacklight />}
+      {pickElement === 'carousel' && <Carousel />}
+
 
 
 

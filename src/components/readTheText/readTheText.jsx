@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 function ReadTheText(props) {
 
-  const [text, setText] = useState('маза квака')
+  const [text, setText] = useState('0 1 2 3 4 5 выйдет зайчик погулять. пиу пау ой ой ой погибает зайчик мой ')
 
   const speakText = () => {
     speechSynthesis.cancel();
