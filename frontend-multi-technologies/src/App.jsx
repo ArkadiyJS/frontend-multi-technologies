@@ -8,8 +8,13 @@ import Quiz from "./components/quiz/Quiz";
 import GameBtn from "./components/gameBtn/gameBtn";
 import CSSElements from "./components/cssElements/cssElements";
 import ReadTheText from "./components/readTheText/readTheText";
+import MenuBotton from "./components/menuBtn/MenuBotton";
+import { useState } from "react";
 
 function App() {
+  const [showModal, setShowModal] = useState(false);
+  const [active, setActive] = useState(false);
+
   return (
     <div className="Page">
       <div className="Header">
@@ -21,9 +26,20 @@ function App() {
         </NavLink>
       </div>
 
-      <div className="NavBar">
-        <NavBar />
-      </div>
+      <div className="circleBG"></div>
+      <MenuBotton
+        showModal={showModal}
+        setShowModal={setShowModal}
+        active={active}
+        setActive={setActive}
+      />
+
+      <NavBar
+        showModal={showModal}
+        setShowModal={setShowModal}
+        active={active}
+        setActive={setActive}
+      />
 
       <div className="Content">
         <Routes>

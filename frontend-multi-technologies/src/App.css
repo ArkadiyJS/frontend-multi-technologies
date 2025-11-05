@@ -4,20 +4,17 @@
   width: 1200px;
   margin: 0 auto;
   grid-template-areas:
-    'h h'
-    'n n'
-    'c c';
+    "h h"
+    "n n"
+    "c c";
   grid-template-rows: 120px 1fr;
   grid-template-columns: 120px 1fr;
   grid-gap: 5px;
-
 }
-
 .Header {
   display: flex;
   grid-area: h;
   justify-content: center;
-
 }
 
 .Header img {
@@ -25,31 +22,25 @@
   height: 120px;
 }
 
-
-
 .Content {
-
   margin: auto;
   grid-template-columns: 1fr;
 
   grid-area: c;
-
 }
 
 h1 {
   margin: 0 auto;
   width: 402px;
   text-align: center;
-
 }
 
 a {
   text-decoration: none;
-
 }
 
 a:visited {
-  color: rgb(15, 14, 14)
+  color: rgb(15, 14, 14);
 }
 
 .button {
@@ -61,12 +52,226 @@ a:visited {
   color: rgb(68, 68, 68);
   text-decoration: none;
   user-select: none;
-  padding: .2em 1.2em;
+  padding: 0.2em 1.2em;
   outline: none;
-  border: 1px solid rgba(0, 0, 0, .1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 2px;
   background: rgb(245, 245, 245) linear-gradient(#f4f4f4, #f1f1f1);
-  transition: all .218s ease 0s;
+  transition: all 0.218s ease 0s;
   cursor: pointer;
-
 }
+
+/* кнопка меню */
+
+.box {
+  position: fixed;
+
+  border-radius: 50%;
+
+  top: 25px;
+  left: 25px;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30px;
+  height: 18px;
+  z-index: 9;
+  cursor: pointer;
+}
+
+span {
+  display: block;
+  width: 100%;
+  box-shadow: 0 1.5px 7px rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  height: 6px;
+  background: #fff;
+  transition: all 0.3s;
+  position: relative;
+}
+
+span + span {
+  margin-top: 10px;
+}
+
+.active span:nth-child(1) {
+  animation: ease 0.7s top forwards;
+}
+
+.not-active span:nth-child(1) {
+  animation: ease 0.7s top-2 forwards;
+}
+
+.active span:nth-child(2) {
+  animation: ease 0.7s scaled forwards;
+}
+
+.not-active span:nth-child(2) {
+  animation: ease 0.7s scaled-2 forwards;
+}
+
+.active span:nth-child(3) {
+  animation: ease 0.7s bottom forwards;
+}
+
+.not-active span:nth-child(3) {
+  animation: ease 0.7s bottom-2 forwards;
+}
+
+@keyframes top {
+  0% {
+    top: 0;
+    transform: rotate(0);
+  }
+
+  50% {
+    top: 16px;
+    transform: rotate(0);
+  }
+
+  100% {
+    top: 16px;
+    transform: rotate(45deg);
+  }
+}
+
+@keyframes top-2 {
+  0% {
+    top: 16px;
+    transform: rotate(45deg);
+  }
+
+  50% {
+    top: 16px;
+    transform: rotate(0deg);
+  }
+
+  100% {
+    top: 0;
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes bottom {
+  0% {
+    bottom: 0;
+    transform: rotate(0);
+  }
+
+  50% {
+    bottom: 16px;
+    transform: rotate(0);
+  }
+
+  100% {
+    bottom: 16px;
+    transform: rotate(135deg);
+  }
+}
+
+@keyframes bottom-2 {
+  0% {
+    bottom: 16px;
+    transform: rotate(135deg);
+  }
+
+  50% {
+    bottom: 16px;
+    transform: rotate16px;
+  }
+
+  100% {
+    bottom: 0;
+    transform: rotate(0);
+  }
+}
+
+@keyframes scaled {
+  50% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(0);
+  }
+}
+
+@keyframes scaled-2 {
+  0% {
+    transform: scale(0);
+  }
+
+  50% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+/* кнопка меню конец*/
+
+/* бэк граунд для меню кнопки */
+.circleBG {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 60px;
+  /* Ширина полукруга */
+  height: 60px;
+  background-color: #a7761c;
+  /* Цвет полукруга */
+  border-bottom-right-radius: 55px 55px;
+  /* Скругляем только правый нижний угол */
+  z-index: 1;
+  opacity: 0.7;
+}
+/*  */
+
+/* нав бар */
+.navbar {
+  position: fixed;
+
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100vh;
+  z-index: 1;
+  background-color: #a7761c;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+}
+.navbarBtn {
+  background-color: #7a7772;
+  /* Green */
+
+  border: none;
+  width: 100%;
+  padding: 15px 32px;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+.navbarBtn:hover {
+  background-color: #4caf50;
+}
+.open {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100vh;
+  z-index: 1;
+  background-color: #a7761c;
+  transform: translateX(0);
+  transition: transform 0.3s ease;
+}
+/*  */
