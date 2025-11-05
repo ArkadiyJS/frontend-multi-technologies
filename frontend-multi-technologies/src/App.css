@@ -1,42 +1,72 @@
-#root {
-  max-width: 1280px;
+.Page {
+  display: grid;
+
+  width: 1200px;
   margin: 0 auto;
-  padding: 2rem;
+  grid-template-areas:
+    'h h'
+    'n n'
+    'c c';
+  grid-template-rows: 120px 1fr;
+  grid-template-columns: 120px 1fr;
+  grid-gap: 5px;
+
+}
+
+.Header {
+  display: flex;
+  grid-area: h;
+  justify-content: center;
+
+}
+
+.Header img {
+  width: 900px;
+  height: 120px;
+}
+
+
+
+.Content {
+
+  margin: auto;
+  grid-template-columns: 1fr;
+
+  grid-area: c;
+
+}
+
+h1 {
+  margin: 0 auto;
+  width: 402px;
   text-align: center;
+
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+a {
+  text-decoration: none;
+
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+a:visited {
+  color: rgb(15, 14, 14)
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
+.button {
+  display: inline-block;
+  font-family: arial, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
 
-.card {
-  padding: 2em;
-}
+  color: rgb(68, 68, 68);
+  text-decoration: none;
+  user-select: none;
+  padding: .2em 1.2em;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, .1);
+  border-radius: 2px;
+  background: rgb(245, 245, 245) linear-gradient(#f4f4f4, #f1f1f1);
+  transition: all .218s ease 0s;
+  cursor: pointer;
 
-.read-the-docs {
-  color: #888;
 }
