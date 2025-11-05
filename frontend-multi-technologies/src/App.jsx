@@ -1,35 +1,41 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import "./App.css";
+
+import { NavLink, Route, Routes } from "react-router-dom";
+
+import Modal from "./components/modal/Modal";
+import NavBar from "./components/navBar/NavBar";
+import Quiz from "./components/quiz/Quiz";
+import GameBtn from "./components/gameBtn/gameBtn";
+import CSSElements from "./components/cssElements/cssElements";
+import ReadTheText from "./components/readTheText/readTheText";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className="Page">
+      <div className="Header">
+        <NavLink to="/">
+          <img
+            src="https://sun9-west.userapi.com/sun9-1/s/v1/ig2/D-elL-GHz9_lpeq9AwLr_WPYYEA4NnWqwpn49TQL4_J_bu03zFruNkDjqY6LVRbPBMTrjuN8k9OM3c7BynN1e1GN.jpg?size=1202x193&quality=96&type=album"
+            alt="frontEnd"
+          />
+        </NavLink>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
+
+      <div className="NavBar">
+        <NavBar />
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+
+      <div className="Content">
+        <Routes>
+          <Route path="/modal" element={<Modal />} />
+          <Route path="/quiz" element={<Quiz />} />
+          <Route path="/gameButton" element={<GameBtn />} />
+          <Route path="/CSSElements" element={<CSSElements />} />
+          <Route path="/readTheText" element={<ReadTheText />} />
+        </Routes>
+      </div>
+    </div>
+  );
 }
 
-export default App
+export default App;
