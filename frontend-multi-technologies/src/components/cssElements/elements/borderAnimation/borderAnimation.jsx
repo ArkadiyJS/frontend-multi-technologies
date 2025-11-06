@@ -1,18 +1,20 @@
-import React from 'react';
+import React from "react";
 
-import s from './borderAnimation.module.css'
+import s from "./borderAnimation.module.css";
 
-function BorderAnimation(props) {
+function BorderAnimation() {
   return (
     <>
       <div className={s.border}>
         <span className={s.borderSpan}>
-          <img alt='src' src='https://furman.top/uploads/posts/2022-06/1654737062_54-furman-top-p-magicheskii-krug-art-krasivo-oboi-56.jpg'></img>
+          <img
+            alt="src"
+            src="https://i.pinimg.com/736x/ef/c6/31/efc631f96d82ab4a7e5fdee321681b6c.jpg"
+          ></img>
         </span>
-
       </div>
     </>
   );
 }
 
-export default BorderAnimation
+export default BorderAnimation;
