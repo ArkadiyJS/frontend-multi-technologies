@@ -28,8 +28,6 @@ function App() {
       </div>
       <ButtonDel />
 
-      <span>qweqw</span>
-
       <div className="circleBG"></div>
       <MenuBotton
         showModal={showModal}
