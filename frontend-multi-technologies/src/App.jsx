@@ -11,6 +11,7 @@ import ReadTheText from "./components/readTheText/readTheText";
 import MenuBotton from "./components/menuBtn/MenuBotton";
 import { useState } from "react";
 import ButtonDel from "./components/buttonDel/buttonDel";
+import CheckBoxPencil from "./components/checkBoxPencil/checkBoxPencil";
 
 function App() {
   const [showModal, setShowModal] = useState(false);
@@ -27,6 +28,8 @@ function App() {
         </NavLink>
       </div>
       <ButtonDel />
+
+      <CheckBoxPencil />
 
       <div className="circleBG"></div>
       <MenuBotton
