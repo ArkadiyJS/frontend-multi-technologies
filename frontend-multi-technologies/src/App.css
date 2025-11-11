@@ -23,6 +23,7 @@
 }
 
 .Content {
+  height: 100vh;
   margin: auto;
   grid-template-columns: 1fr;
 
