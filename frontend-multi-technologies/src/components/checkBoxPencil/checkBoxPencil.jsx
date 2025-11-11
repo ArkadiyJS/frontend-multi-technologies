@@ -3,9 +3,10 @@ import s from "./checkBoxPencil.module.scss";
 
 const CheckBoxPencil = () => {
   return (
-    <div>
-      qqqqqqqqqqqqqqqqqqqqq
+    <div style={{ color: "white" }}>
+      тут{`>`}
       <input className={`${s.cb} ${s.pristine}`} type="checkbox" />
+      {`<`}тут
     </div>
   );
 };
